@@ -60,7 +60,7 @@
     {
         case NotReachable:
         {
-            _errorMessage =  @"The network is down is down. Please connect ot a network";
+            _errorMessage =  @"The network is down. Please connect ot a network";
             self.networkStatus = NO;
             return networkStatus;
             break;
