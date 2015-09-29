@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DateValidation.xcscheme</key>
+		<key>DateValidationLibrary.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3BC7F3931BBA0E4E001D8B25</key>
+		<key>24DB8AA41BB11D2B00008727</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24DB8AAF1BB11D2B00008727</key>
 		<dict>
 			<key>primary</key>
 			<true/>
