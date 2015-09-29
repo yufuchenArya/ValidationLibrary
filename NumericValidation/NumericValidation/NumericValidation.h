@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NumericValidation : NSObject
 
 - (BOOL) validateNumber:(NSString *) PositiveNumber;

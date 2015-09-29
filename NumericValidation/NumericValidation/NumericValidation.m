@@ -7,6 +7,7 @@
 //
 
 #import "NumericValidation.h"
+#import "LogLibrary.h"
 
 @implementation NumericValidation
 
@@ -18,5 +19,8 @@
     }
     
     return false;
+//    [[[[LogLibrary]alloc]init] writeToLogFile:[exceptionString1 stringByAppendString: exceptionString2]stringByAppendString:exceptionString3]];
 }
+
+
 @end
