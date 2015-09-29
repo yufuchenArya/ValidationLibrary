@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248DFB581BB9D55000F49243 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 248DFB571BB9D55000F49243 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
+		24D9C8591BACDA5000769C93 /* InputValidationLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24D9C8581BACDA5000769C93 /* InputValidationLibrary.h */; };
+		24D9C85B1BACDA5000769C93 /* InputValidationLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D9C85A1BACDA5000769C93 /* InputValidationLibrary.m */; };
+		24D9C8611BACDA5000769C93 /* libInputValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D9C8551BACDA5000769C93 /* libInputValidationLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24D9C8621BACDA5000769C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24D9C84D1BACDA5000769C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24D9C8541BACDA5000769C93;
+			remoteInfo = InputValidationLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24D9C8531BACDA5000769C93 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				24D9C8591BACDA5000769C93 /* InputValidationLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		248DFB531BB5C47800F49243 /* CustomTypedefLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTypedefLibrary.h; sourceTree = "<group>"; };
+		248DFB561BB5CF1200F49243 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
+		248DFB571BB9D55000F49243 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
+		24D9C8551BACDA5000769C93 /* libInputValidationLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInputValidationLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D9C8581BACDA5000769C93 /* InputValidationLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidationLibrary.h; sourceTree = "<group>"; };
+		24D9C85A1BACDA5000769C93 /* InputValidationLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidationLibrary.m; sourceTree = "<group>"; };
+		24D9C8601BACDA5000769C93 /* InputValidationLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputValidationLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D9C8661BACDA5000769C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D9C8521BACDA5000769C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248DFB581BB9D55000F49243 /* libLogLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D9C85D1BACDA5000769C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D9C8611BACDA5000769C93 /* libInputValidationLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D9C84C1BACDA5000769C93 = {
+			isa = PBXGroup;
+			children = (
+				24D9C8571BACDA5000769C93 /* InputValidationLibrary */,
+				24D9C8641BACDA5000769C93 /* InputValidationLibraryTests */,
+				24D9C8561BACDA5000769C93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24D9C8561BACDA5000769C93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D9C8551BACDA5000769C93 /* libInputValidationLibrary.a */,
+				24D9C8601BACDA5000769C93 /* InputValidationLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D9C8571BACDA5000769C93 /* InputValidationLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				24D9C8581BACDA5000769C93 /* InputValidationLibrary.h */,
+				24D9C85A1BACDA5000769C93 /* InputValidationLibrary.m */,
+				248DFB531BB5C47800F49243 /* CustomTypedefLibrary.h */,
+				248DFB571BB9D55000F49243 /* libLogLibrary.a */,
+				248DFB561BB5CF1200F49243 /* LogLibrary.h */,
+			);
+			path = InputValidationLibrary;
+			sourceTree = "<group>";
+		};
+		24D9C8641BACDA5000769C93 /* InputValidationLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				24D9C8651BACDA5000769C93 /* Supporting Files */,
+			);
+			path = InputValidationLibraryTests;
+			sourceTree = "<group>";
+		};
+		24D9C8651BACDA5000769C93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24D9C8661BACDA5000769C93 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D9C8541BACDA5000769C93 /* InputValidationLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D9C8691BACDA5000769C93 /* Build configuration list for PBXNativeTarget "InputValidationLibrary" */;
+			buildPhases = (
+				24D9C8511BACDA5000769C93 /* Sources */,
+				24D9C8521BACDA5000769C93 /* Frameworks */,
+				24D9C8531BACDA5000769C93 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputValidationLibrary;
+			productName = InputValidationLibrary;
+			productReference = 24D9C8551BACDA5000769C93 /* libInputValidationLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24D9C85F1BACDA5000769C93 /* InputValidationLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D9C86C1BACDA5000769C93 /* Build configuration list for PBXNativeTarget "InputValidationLibraryTests" */;
+			buildPhases = (
+				24D9C85C1BACDA5000769C93 /* Sources */,
+				24D9C85D1BACDA5000769C93 /* Frameworks */,
+				24D9C85E1BACDA5000769C93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24D9C8631BACDA5000769C93 /* PBXTargetDependency */,
+			);
+			name = InputValidationLibraryTests;
+			productName = InputValidationLibraryTests;
+			productReference = 24D9C8601BACDA5000769C93 /* InputValidationLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D9C84D1BACDA5000769C93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = purnima;
+				TargetAttributes = {
+					24D9C8541BACDA5000769C93 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					24D9C85F1BACDA5000769C93 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 24D9C8501BACDA5000769C93 /* Build configuration list for PBXProject "InputValidationLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24D9C84C1BACDA5000769C93;
+			productRefGroup = 24D9C8561BACDA5000769C93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D9C8541BACDA5000769C93 /* InputValidationLibrary */,
+				24D9C85F1BACDA5000769C93 /* InputValidationLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D9C85E1BACDA5000769C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D9C8511BACDA5000769C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D9C85B1BACDA5000769C93 /* InputValidationLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24D9C85C1BACDA5000769C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24D9C8631BACDA5000769C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24D9C8541BACDA5000769C93 /* InputValidationLibrary */;
+			targetProxy = 24D9C8621BACDA5000769C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24D9C8671BACDA5000769C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D9C8681BACDA5000769C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D9C86A1BACDA5000769C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputValidationLibrary",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24D9C86B1BACDA5000769C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputValidationLibrary",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24D9C86D1BACDA5000769C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InputValidationLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24D9C86E1BACDA5000769C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = InputValidationLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D9C8501BACDA5000769C93 /* Build configuration list for PBXProject "InputValidationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D9C8671BACDA5000769C93 /* Debug */,
+				24D9C8681BACDA5000769C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D9C8691BACDA5000769C93 /* Build configuration list for PBXNativeTarget "InputValidationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D9C86A1BACDA5000769C93 /* Debug */,
+				24D9C86B1BACDA5000769C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D9C86C1BACDA5000769C93 /* Build configuration list for PBXNativeTarget "InputValidationLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D9C86D1BACDA5000769C93 /* Debug */,
+				24D9C86E1BACDA5000769C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24D9C84D1BACDA5000769C93 /* Project object */;
+}
