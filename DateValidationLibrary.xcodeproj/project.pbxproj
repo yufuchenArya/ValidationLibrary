@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24DB8AA91BB11D2B00008727 /* DateValidationLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24DB8AA81BB11D2B00008727 /* DateValidationLibrary.h */; };
+		24DB8AAB1BB11D2B00008727 /* DateValidationLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */; };
+		24DB8AB11BB11D2B00008727 /* libDateValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DB8AA51BB11D2B00008727 /* libDateValidationLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24DB8AB21BB11D2B00008727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DB8A9D1BB11D2B00008727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DB8AA41BB11D2B00008727;
+			remoteInfo = DateValidationLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24DB8AA31BB11D2B00008727 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				24DB8AA91BB11D2B00008727 /* DateValidationLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24DB8AA51BB11D2B00008727 /* libDateValidationLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDateValidationLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DB8AA81BB11D2B00008727 /* DateValidationLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateValidationLibrary.h; sourceTree = "<group>"; };
+		24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateValidationLibrary.m; sourceTree = "<group>"; };
+		24DB8AB01BB11D2B00008727 /* DateValidationLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateValidationLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DB8AB61BB11D2B00008727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24DB8AA21BB11D2B00008727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DB8AAD1BB11D2B00008727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DB8AB11BB11D2B00008727 /* libDateValidationLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24DB8A9C1BB11D2B00008727 = {
+			isa = PBXGroup;
+			children = (
+				24DB8AA71BB11D2B00008727 /* DateValidationLibrary */,
+				24DB8AB41BB11D2B00008727 /* DateValidationLibraryTests */,
+				24DB8AA61BB11D2B00008727 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24DB8AA61BB11D2B00008727 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24DB8AA51BB11D2B00008727 /* libDateValidationLibrary.a */,
+				24DB8AB01BB11D2B00008727 /* DateValidationLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24DB8AA71BB11D2B00008727 /* DateValidationLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				24DB8AA81BB11D2B00008727 /* DateValidationLibrary.h */,
+				24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */,
+			);
+			path = DateValidationLibrary;
+			sourceTree = "<group>";
+		};
+		24DB8AB41BB11D2B00008727 /* DateValidationLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				24DB8AB51BB11D2B00008727 /* Supporting Files */,
+			);
+			path = DateValidationLibraryTests;
+			sourceTree = "<group>";
+		};
+		24DB8AB51BB11D2B00008727 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24DB8AB61BB11D2B00008727 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24DB8AA41BB11D2B00008727 /* DateValidationLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DB8AB91BB11D2B00008727 /* Build configuration list for PBXNativeTarget "DateValidationLibrary" */;
+			buildPhases = (
+				24DB8AA11BB11D2B00008727 /* Sources */,
+				24DB8AA21BB11D2B00008727 /* Frameworks */,
+				24DB8AA31BB11D2B00008727 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateValidationLibrary;
+			productName = DateValidationLibrary;
+			productReference = 24DB8AA51BB11D2B00008727 /* libDateValidationLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		24DB8AAF1BB11D2B00008727 /* DateValidationLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DB8ABC1BB11D2B00008727 /* Build configuration list for PBXNativeTarget "DateValidationLibraryTests" */;
+			buildPhases = (
+				24DB8AAC1BB11D2B00008727 /* Sources */,
+				24DB8AAD1BB11D2B00008727 /* Frameworks */,
+				24DB8AAE1BB11D2B00008727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24DB8AB31BB11D2B00008727 /* PBXTargetDependency */,
+			);
+			name = DateValidationLibraryTests;
+			productName = DateValidationLibraryTests;
+			productReference = 24DB8AB01BB11D2B00008727 /* DateValidationLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24DB8A9D1BB11D2B00008727 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = purnima;
+				TargetAttributes = {
+					24DB8AA41BB11D2B00008727 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					24DB8AAF1BB11D2B00008727 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 24DB8AA01BB11D2B00008727 /* Build configuration list for PBXProject "DateValidationLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24DB8A9C1BB11D2B00008727;
+			productRefGroup = 24DB8AA61BB11D2B00008727 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DB8AA41BB11D2B00008727 /* DateValidationLibrary */,
+				24DB8AAF1BB11D2B00008727 /* DateValidationLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24DB8AAE1BB11D2B00008727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24DB8AA11BB11D2B00008727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DB8AAB1BB11D2B00008727 /* DateValidationLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DB8AAC1BB11D2B00008727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24DB8AB31BB11D2B00008727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24DB8AA41BB11D2B00008727 /* DateValidationLibrary */;
+			targetProxy = 24DB8AB21BB11D2B00008727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24DB8AB71BB11D2B00008727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24DB8AB81BB11D2B00008727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24DB8ABA1BB11D2B00008727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24DB8ABB1BB11D2B00008727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		24DB8ABD1BB11D2B00008727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DateValidationLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24DB8ABE1BB11D2B00008727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DateValidationLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24DB8AA01BB11D2B00008727 /* Build configuration list for PBXProject "DateValidationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DB8AB71BB11D2B00008727 /* Debug */,
+				24DB8AB81BB11D2B00008727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DB8AB91BB11D2B00008727 /* Build configuration list for PBXNativeTarget "DateValidationLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DB8ABA1BB11D2B00008727 /* Debug */,
+				24DB8ABB1BB11D2B00008727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		24DB8ABC1BB11D2B00008727 /* Build configuration list for PBXNativeTarget "DateValidationLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DB8ABD1BB11D2B00008727 /* Debug */,
+				24DB8ABE1BB11D2B00008727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24DB8A9D1BB11D2B00008727 /* Project object */;
+}
