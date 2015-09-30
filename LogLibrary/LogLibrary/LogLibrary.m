@@ -10,14 +10,20 @@
 
 @implementation LogLibrary
 
--(void) writeToLogFile:(NSString*)content
+-(void) writeToLogFile:(NSString *)content :(NSString *)documentsDirectory
 {
     
     
     // NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     //NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     
-    NSString *documentsDirectory = @"/Users/temp/Desktop/purnima/spilro";
+    NSString *defaultDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *folderPath = [defaultDirectory stringByAppendingPathComponent:@"ErrorLog"];
+    
+    if (documentsDirectory.length == 0) {
+        
+        documentsDirectory = folderPath;
+    }
     
    // NSString *pathForLog = [documentsDirectory stringByAppendingPathComponent:@"RedirectedNSLogDocument.txt"];
    // freopen([pathForLog cStringUsingEncoding:NSASCIIStringEncoding],"a+",stderr);  //all NSLog statements will be added to this file
@@ -70,8 +76,6 @@
         if (filecreated) NSLog(@"File has been created at %d", filecreated);
         
     }
-    
-    
 }
 
 

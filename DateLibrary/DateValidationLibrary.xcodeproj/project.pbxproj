@@ -10,6 +10,7 @@
 		24DB8AA91BB11D2B00008727 /* DateValidationLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24DB8AA81BB11D2B00008727 /* DateValidationLibrary.h */; };
 		24DB8AAB1BB11D2B00008727 /* DateValidationLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */; };
 		24DB8AB11BB11D2B00008727 /* libDateValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DB8AA51BB11D2B00008727 /* libDateValidationLibrary.a */; };
+		3B48D80D1BBC79DE00B53F29 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B48D80B1BBC79DE00B53F29 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateValidationLibrary.m; sourceTree = "<group>"; };
 		24DB8AB01BB11D2B00008727 /* DateValidationLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateValidationLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DB8AB61BB11D2B00008727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B48D80B1BBC79DE00B53F29 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
+		3B48D80C1BBC79DE00B53F29 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B48D80D1BBC79DE00B53F29 /* libLogLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,8 @@
 		24DB8AA71BB11D2B00008727 /* DateValidationLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				3B48D80B1BBC79DE00B53F29 /* libLogLibrary.a */,
+				3B48D80C1BBC79DE00B53F29 /* LogLibrary.h */,
 				24DB8AA81BB11D2B00008727 /* DateValidationLibrary.h */,
 				24DB8AAA1BB11D2B00008727 /* DateValidationLibrary.m */,
 			);
@@ -296,6 +302,10 @@
 		24DB8ABA1BB11D2B00008727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DateValidationLibrary",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -305,6 +315,10 @@
 		24DB8ABB1BB11D2B00008727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DateValidationLibrary",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -362,6 +376,7 @@
 				24DB8ABB1BB11D2B00008727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24DB8ABC1BB11D2B00008727 /* Build configuration list for PBXNativeTarget "DateValidationLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -370,6 +385,7 @@
 				24DB8ABE1BB11D2B00008727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

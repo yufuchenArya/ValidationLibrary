@@ -10,6 +10,6 @@
 
 @interface LogLibrary : NSObject
 
--(void) writeToLogFile:(NSString *)content :(NSString *)documentsDirectory;
+-(void) writeToLogFile:(NSString*)content;
 
 @end
