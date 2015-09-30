@@ -11,7 +11,11 @@
 
 @interface NumericValidation : NSObject
 
-- (BOOL) validateNumber:(NSString *) PositiveNumber;
+-(BOOL) isNumber:(NSString *)value;
+-(BOOL) positiveNumber:(NSString *) value;
+-(BOOL) isRangedNumber:(NSString *) value :(NSString *)minValue :(NSString *)maxValue;
+-(NSString *) decimalNumber:(NSString *) value :(NSInteger) numberOfDecimal;
+
 
 
 @end
