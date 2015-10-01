@@ -25,6 +25,6 @@
 
 -(BOOL) isItToday:(NSDate *)date; //returns YES if given date is equal to today's date else NO
 
-
+-(BOOL) validateTime:(NSString *) time;
 
 @end

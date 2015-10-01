@@ -17,17 +17,17 @@
         NSDateFormatter *format = [[NSDateFormatter alloc] init];
         [format setDateStyle:NSDateFormatterShortStyle];
         [format setDateFormat:@"MM/dd/yy"];
-        NSDate *validateDOB = [format dateFromString:date];
-        if (validateDOB != nil)
+        NSDate *validDate = [format dateFromString:date];
+        if (validDate != nil)
             return YES;
         else
             return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: validateDate Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -47,10 +47,10 @@
         return components;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: distanceFrom Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -66,10 +66,10 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isFutureDateToToday Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -84,11 +84,10 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
-
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isPastDateToToday Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -103,13 +102,68 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isItToday Method" stringByAppendingString:exception.reason]];
 
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
+
+-(BOOL) validateTime:(NSString *) time{
+    @try {
+        NSArray *temp = [time componentsSeparatedByString:@":"];
+        if ([temp count] > 3 || [temp count] < 2) {
+            return false;
+        }
+        
+        NSString *h = [temp objectAtIndex:0];
+        NSString *m = [temp objectAtIndex:1];
+        NSString *s ;
+        
+        if([temp count] == 3){
+            s = [temp objectAtIndex:2];
+        }
+        
+        
+        // Minutes and seconds must be of two digits. Hours, instead, might have any digits.
+        if (m.length != 2) {
+            return NO;
+        }
+        if (s.length != 2) {
+            return NO;
+        }
+        
+        // Check values are numeric.
+        NSCharacterSet *num09 = [NSCharacterSet decimalDigitCharacterSet];
+        if (![num09 isSupersetOfSet:[NSCharacterSet characterSetWithCharactersInString:h]]) {
+            return NO;
+        }
+        if (![num09 isSupersetOfSet:[NSCharacterSet characterSetWithCharactersInString:m]]) {
+            return NO;
+        }
+        if (![num09 isSupersetOfSet:[NSCharacterSet characterSetWithCharactersInString:s]]) {
+            return NO;
+        }
+        
+        // Minute and second values must be lesser than 60.
+        if ([m integerValue] >= 60) {
+            return NO;
+        }
+        if ([s integerValue] >= 60) {
+            return NO;
+        }
+        
+        return YES;
+    }
+    @catch (NSException *exception) {
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: validateTime Method" stringByAppendingString:exception.reason]];
+    }
+    @finally {
+        NSLog( @"In finally block");
+    }
+}
+
 
 
 @end

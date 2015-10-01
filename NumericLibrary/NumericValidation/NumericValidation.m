@@ -30,10 +30,10 @@
         return [numberTest evaluateWithObject:value];
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: NumericValidation: isNumber Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -52,10 +52,10 @@
         }
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: NumericValidation: positiveNumber Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -76,10 +76,10 @@
         }
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: NumericValidation: isRangedNumber Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
@@ -104,10 +104,10 @@
         return value;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: InputValidateLibrary: ValidateLengthOfTextField Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: NumericValidation: decimalNumber Method" stringByAppendingString:exception.reason]];
     }
     @finally {
-        
+        NSLog( @"In finally block");
     }
 }
 
