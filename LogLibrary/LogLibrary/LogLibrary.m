@@ -17,10 +17,9 @@
     // NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     //NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     
-    NSString *defaultDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString *folderPath = [defaultDirectory stringByAppendingPathComponent:@"ErrorLog"];
-    
     if (documentsDirectory.length == 0) {
+        NSString *defaultDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        NSString *folderPath = [defaultDirectory stringByAppendingPathComponent:@"ErrorLog"];
         
         documentsDirectory = folderPath;
     }
