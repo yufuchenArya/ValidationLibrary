@@ -10,12 +10,12 @@
 
 @interface ErrorMessageLibrary : NSObject
 
--(NSString *)errorForValidatePresenceOfTextField:(id) textfield;
-- (NSString *)errorForLength;
-- (NSString *)errorForPhoneNumber;
-- (NSString *)errorForPassword;
-- (NSString *)errorForFirstAndLastName;
-- (NSString *)errorForEmailAddress;
-- (NSString *)errorForPasswordConfirmation;
+- (NSString *)errorMessageForPresence;
+- (NSString *)errorMessageForLength;
+- (NSString *)errorMessageForPhoneNumber;
+- (NSString *)errorMessageForPassword;
+- (NSString *)errorMessageForSpecialChar;
+- (NSString *)errorMessageForEmailAddress;
+- (NSString *)errorMessageForPasswordConfirmation;
 
 @end
