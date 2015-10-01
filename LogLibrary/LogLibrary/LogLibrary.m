@@ -10,7 +10,7 @@
 
 @implementation LogLibrary
 
--(void) writeToLogFile:(NSString *)content :(NSString *)documentsDirectory
+-(void) writeToLogFile:(NSString *)content inFilePath:(NSString *)documentsDirectory
 {
     
     
