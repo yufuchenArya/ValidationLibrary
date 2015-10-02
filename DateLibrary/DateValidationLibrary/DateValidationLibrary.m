@@ -110,7 +110,7 @@
     }
 }
 
--(BOOL) validateTime:(NSString *) time{
+-(BOOL) validateTime:(NSString *) time :(BOOL)isCountingTime :(BOOL)is24HourSystem{
     @try {
         NSArray *temp = [time componentsSeparatedByString:@":"];
         if ([temp count] > 3 || [temp count] < 2) {
@@ -124,7 +124,17 @@
         if([temp count] == 3){
             s = [temp objectAtIndex:2];
         }
-        
+        if (!isCountingTime) {
+            if (h.length !=2) {
+                return NO;
+            }
+            if ([h integerValue] > 12 && !is24HourSystem) {
+                return NO;
+            }
+            if ([h integerValue] >= 24 && is24HourSystem) {
+                return NO;
+            }
+        }
         
         // Minutes and seconds must be of two digits. Hours, instead, might have any digits.
         if (m.length != 2) {
@@ -163,6 +173,62 @@
         NSLog( @"In finally block");
     }
 }
+
+-(NSString *) transferToUTCTime:(NSDate *) timeValue withZone:(BOOL)value{
+    @try {
+        NSString * dateFormat =@"MM-dd-yyyy HH:mm:ss";
+        
+        if (value) {
+            dateFormat =@"MM-dd-yyyy HH:mm:ss zzz";
+        }
+        
+        NSDateFormatter *inputFormat = [[NSDateFormatter alloc] init];
+        NSTimeZone *localZone = [NSTimeZone localTimeZone];
+        [inputFormat setTimeZone:localZone];
+        [inputFormat setDateFormat:dateFormat];
+        
+        NSString * time = [inputFormat stringFromDate:timeValue];
+        NSDate * Localtime = [inputFormat dateFromString:time];
+        
+        NSDateFormatter * outputFormat = [[NSDateFormatter alloc]init];
+        NSTimeZone * UTCtime = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];
+        [outputFormat setTimeZone:UTCtime];
+        [outputFormat setDateFormat:dateFormat];
+        
+        NSString * UTC_String = [outputFormat stringFromDate:Localtime];
+        
+        return UTC_String;
+        
+    }
+    @catch (NSException *exception) {
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: transferToUTCTime Method" stringByAppendingString:exception.reason]];
+    }
+    @finally {
+        NSLog( @"In finally block");
+    }
+}
+
+-(NSString *) displayInLocaleFormat:(NSDate *)timeValue{
+    @try {
+        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+        NSLocale * locale = [NSLocale currentLocale];
+        NSString * dateComponents = @"ddMMyyyy hhmmss";
+        NSString* format = [NSDateFormatter dateFormatFromTemplate:dateComponents options:0 locale:locale];
+        [dateFormatter setLocale:locale];
+        [dateFormatter setDateFormat:format];
+        
+        NSString *newDateString = [dateFormatter stringFromDate:timeValue];
+        
+        return newDateString;
+    }
+    @catch (NSException *exception) {
+        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: transferToUTCTime Method" stringByAppendingString:exception.reason]];
+    }
+    @finally {
+        NSLog( @"In finally block");
+    }
+}
+
 
 
 

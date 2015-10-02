@@ -27,4 +27,8 @@
 
 -(BOOL) validateTime:(NSString *) time;
 
+-(NSString *) transferToUTCTime:(NSDate *) timeValue withZone:(BOOL)value;
+
+-(NSString *) displayInLocaleFormat:(NSDate *)timeValue;
+
 @end
