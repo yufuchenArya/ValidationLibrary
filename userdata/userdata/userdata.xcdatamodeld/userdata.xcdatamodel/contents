@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14E46" minimumToolsVersion="Automatic">
+    <entity name="Sp_dta_post" representedClassName="Sp_dta_post" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attributeper_share_price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="category_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="category_img_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" indexed="YES" spotlightIndexingEnabled="YES" syncable="YES"/>
+        <attribute name="invoice_image_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="invoice_price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="is_browsed" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_favorite" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="is_invited" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="keywords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_name_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_thumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_thumb_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_close_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="post_expire_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="post_guid" attributeType="String" syncable="YES"/>
+        <attribute name="post_hashtag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="post_latitude" optional="YES" attributeType="Double" minValueString="10" maxValueString="6" defaultValueString="0" syncable="YES"/>
+        <attribute name="post_longitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="poster_active_share_count" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="poster_zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="receipt_img_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected_category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_joined" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="total_share" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="total_shares_left" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="trno" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="updated_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="comma"/>
+                <index value="separated"/>
+                <index value="properties"/>
+            </compoundIndex>
+        </compoundIndexes>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="post_guid NOT NULL UNIQUE"/>
+            </uniquenessConstraint>
+            <uniquenessConstraint>
+                <constraint value="comma"/>
+                <constraint value="separated"/>
+                <constraint value="properties"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Sp_mst_category" representedClassName="Sp_mst_category" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="attributecategory_id" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashtag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="image_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywords" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parent_category_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="parent_category_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_thumb_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_thumb_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pic_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trno" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Sp_dta_post" positionX="-45" positionY="0" width="128" height="660"/>
+        <element name="Sp_mst_category" positionX="-18" positionY="27" width="128" height="300"/>
+    </elements>
+</model>
