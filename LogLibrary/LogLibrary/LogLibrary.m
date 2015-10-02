@@ -78,5 +78,37 @@
 }
 
 
+-(void)writeExceptionToLogFile:( NSException *)exception fromClass:(NSString *)fromClass fromMethod:(NSString *)methodName 
+{
+    @try
+    {
+        NSString * exceptionSubString = @"\n ************************************************************************";
+        
+        NSString * exceptionSubString1 = [@" \n NSException Caught From Class: " stringByAppendingString: fromClass];
+        
+        NSString * exceptionSubString2 = [@" \n Method: " stringByAppendingString:methodName];
+        
+        NSString * exceptionSubString3 = [@" \n Exception: " stringByAppendingString: exception.reason];
+        
+        NSString * exceptionSubString4 = @"";
+        
+        NSString * exceptionSubString5 = @"\n ************************************************************************";
+        
+        NSString * exceptionString1 = [ exceptionSubString stringByAppendingString:exceptionSubString1];
+        NSString * exceptionString2 = [ exceptionSubString2 stringByAppendingString:exceptionSubString3];
+        NSString * exceptionString3 = [ exceptionSubString4 stringByAppendingString:exceptionSubString5];
+        
+        [[[LogLibrary alloc]init]  writeToLogFile:[[exceptionString1 stringByAppendingString: exceptionString2] stringByAppendingString:exceptionString3]];
+    }
+    @catch(NSException * exception)
+    {
+        [self writeExceptionToLogFile:exception];
+    }
+    @finally{}
+    
+}
+
+
+
 
 @end

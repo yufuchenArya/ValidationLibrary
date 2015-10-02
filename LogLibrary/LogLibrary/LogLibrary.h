@@ -11,5 +11,6 @@
 @interface LogLibrary : NSObject
 
 -(void) writeToLogFile:(NSString *)content inFilePath:(NSString *)documentsDirectory;
+-(void)writeExceptionToLogFile:( NSException *)exception fromClass:(NSString *)fromClass fromMethod:(NSString *)methodName;
 
 @end
