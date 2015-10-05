@@ -90,19 +90,16 @@
         
         NSString * exceptionSubString3 = [@" \n Exception: " stringByAppendingString: exception.reason];
         
-        NSString * exceptionSubString4 = @"";
-        
         NSString * exceptionSubString5 = @"\n ************************************************************************";
         
         NSString * exceptionString1 = [ exceptionSubString stringByAppendingString:exceptionSubString1];
         NSString * exceptionString2 = [ exceptionSubString2 stringByAppendingString:exceptionSubString3];
-        NSString * exceptionString3 = [ exceptionSubString4 stringByAppendingString:exceptionSubString5];
         
-        [[[LogLibrary alloc]init]  writeToLogFile:[[exceptionString1 stringByAppendingString: exceptionString2] stringByAppendingString:exceptionString3]];
+        [self writeToLogFile:[[exceptionString1 stringByAppendingString: exceptionString2] stringByAppendingString:exceptionSubString5] inFilePath:@""];
     }
     @catch(NSException * exception)
     {
-        [self writeExceptionToLogFile:exception];
+        [self writeExceptionToLogFile:exception fromClass:NSStringFromClass([self class]) fromMethod:NSStringFromSelector(_cmd)];
     }
     @finally{}
     
