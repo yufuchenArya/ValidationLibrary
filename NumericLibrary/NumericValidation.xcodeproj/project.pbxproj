@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B4771DD1BBB24E9003328A6 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4771DB1BBB24E9003328A6 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
+		24DF5E231BC314BE0021F6E8 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF5E221BC314BE0021F6E8 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
 		3BC7F3831BBA079D001D8B25 /* NumericValidation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3BC7F3821BBA079D001D8B25 /* NumericValidation.h */; };
 		3BC7F3851BBA079D001D8B25 /* NumericValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC7F3841BBA079D001D8B25 /* NumericValidation.m */; };
 /* End PBXBuildFile section */
@@ -26,8 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B4771DB1BBB24E9003328A6 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
-		3B4771DC1BBB24E9003328A6 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
+		24DF5E221BC314BE0021F6E8 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
+		24DF5E241BC314C80021F6E8 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
 		3BC7F37F1BBA079D001D8B25 /* libNumericValidation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNumericValidation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC7F3821BBA079D001D8B25 /* NumericValidation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumericValidation.h; sourceTree = "<group>"; };
 		3BC7F3841BBA079D001D8B25 /* NumericValidation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumericValidation.m; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4771DD1BBB24E9003328A6 /* libLogLibrary.a in Frameworks */,
+				24DF5E231BC314BE0021F6E8 /* libLogLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,10 +64,10 @@
 		3BC7F3811BBA079D001D8B25 /* NumericValidation */ = {
 			isa = PBXGroup;
 			children = (
-				3B4771DB1BBB24E9003328A6 /* libLogLibrary.a */,
-				3B4771DC1BBB24E9003328A6 /* LogLibrary.h */,
 				3BC7F3821BBA079D001D8B25 /* NumericValidation.h */,
 				3BC7F3841BBA079D001D8B25 /* NumericValidation.m */,
+				24DF5E221BC314BE0021F6E8 /* libLogLibrary.a */,
+				24DF5E241BC314C80021F6E8 /* LogLibrary.h */,
 			);
 			path = NumericValidation;
 			sourceTree = "<group>";
