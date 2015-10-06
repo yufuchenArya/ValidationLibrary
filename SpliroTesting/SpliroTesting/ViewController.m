@@ -110,4 +110,20 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    NSManagedObjectContext *context = [self managedObjectContext];
+
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [context deleteObject:[self.userInfo objectAtIndex:indexPath.row]];
+        NSError *error = nil;
+        if (![context save:&error]) {
+            NSLog(@"Can't Delete! %@ %@", error, [error localizedDescription]);
+            return;
+        }
+    }
+    [self.userInfo removeObjectAtIndex:indexPath.row];
+    [self.tableview_user deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
 @end
