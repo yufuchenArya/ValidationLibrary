@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24DF81041BC3C2D20021F6E8 /* InputValidationLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24DF81031BC3C2D20021F6E8 /* InputValidationLib.h */; };
+		24DF81061BC3C2D20021F6E8 /* InputValidationLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DF81051BC3C2D20021F6E8 /* InputValidationLib.m */; };
+		24DF810F1BC3C3C00021F6E8 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		24DF80FE1BC3C2D20021F6E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				24DF81041BC3C2D20021F6E8 /* InputValidationLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24DF81001BC3C2D20021F6E8 /* libInputValidationLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libInputValidationLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DF81031BC3C2D20021F6E8 /* InputValidationLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidationLib.h; sourceTree = "<group>"; };
+		24DF81051BC3C2D20021F6E8 /* InputValidationLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidationLib.m; sourceTree = "<group>"; };
+		24DF810C1BC3C37E0021F6E8 /* CustomTypedefLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTypedefLibrary.h; sourceTree = "<group>"; };
+		24DF810D1BC3C38D0021F6E8 /* ErrorMessageLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessageLibrary.h; sourceTree = "<group>"; };
+		24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
+		24DF81101BC3C3C90021F6E8 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24DF80FD1BC3C2D20021F6E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DF810F1BC3C3C00021F6E8 /* libLogLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24DF80F71BC3C2D10021F6E8 = {
+			isa = PBXGroup;
+			children = (
+				24DF81021BC3C2D20021F6E8 /* InputValidationLib */,
+				24DF81011BC3C2D20021F6E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24DF81011BC3C2D20021F6E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24DF81001BC3C2D20021F6E8 /* libInputValidationLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24DF81021BC3C2D20021F6E8 /* InputValidationLib */ = {
+			isa = PBXGroup;
+			children = (
+				24DF81031BC3C2D20021F6E8 /* InputValidationLib.h */,
+				24DF81051BC3C2D20021F6E8 /* InputValidationLib.m */,
+				24DF810C1BC3C37E0021F6E8 /* CustomTypedefLibrary.h */,
+				24DF810D1BC3C38D0021F6E8 /* ErrorMessageLibrary.h */,
+				24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */,
+				24DF81101BC3C3C90021F6E8 /* LogLibrary.h */,
+			);
+			path = InputValidationLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24DF80FF1BC3C2D20021F6E8 /* InputValidationLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DF81091BC3C2D20021F6E8 /* Build configuration list for PBXNativeTarget "InputValidationLib" */;
+			buildPhases = (
+				24DF80FC1BC3C2D20021F6E8 /* Sources */,
+				24DF80FD1BC3C2D20021F6E8 /* Frameworks */,
+				24DF80FE1BC3C2D20021F6E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputValidationLib;
+			productName = InputValidationLib;
+			productReference = 24DF81001BC3C2D20021F6E8 /* libInputValidationLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24DF80F81BC3C2D10021F6E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = purnima;
+				TargetAttributes = {
+					24DF80FF1BC3C2D20021F6E8 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 5PJZU842SF;
+					};
+				};
+			};
+			buildConfigurationList = 24DF80FB1BC3C2D10021F6E8 /* Build configuration list for PBXProject "InputValidationLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24DF80F71BC3C2D10021F6E8;
+			productRefGroup = 24DF81011BC3C2D20021F6E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DF80FF1BC3C2D20021F6E8 /* InputValidationLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24DF80FC1BC3C2D20021F6E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DF81061BC3C2D20021F6E8 /* InputValidationLib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		24DF81071BC3C2D20021F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24DF81081BC3C2D20021F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24DF810A1BC3C2D20021F6E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputValidationLib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		24DF810B1BC3C2D20021F6E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InputValidationLib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24DF80FB1BC3C2D10021F6E8 /* Build configuration list for PBXProject "InputValidationLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DF81071BC3C2D20021F6E8 /* Debug */,
+				24DF81081BC3C2D20021F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DF81091BC3C2D20021F6E8 /* Build configuration list for PBXNativeTarget "InputValidationLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DF810A1BC3C2D20021F6E8 /* Debug */,
+				24DF810B1BC3C2D20021F6E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24DF80F81BC3C2D10021F6E8 /* Project object */;
+}
