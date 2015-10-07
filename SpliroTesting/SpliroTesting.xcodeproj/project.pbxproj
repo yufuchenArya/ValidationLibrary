@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */; settings = {ASSET_TAGS = (); }; };
+		24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */; settings = {ASSET_TAGS = (); }; };
 		3BFE07D31BC3376D001F4D5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D21BC3376D001F4D5B /* main.m */; };
 		3BFE07D61BC3376D001F4D5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D51BC3376D001F4D5B /* AppDelegate.m */; };
 		3BFE07D91BC3376D001F4D5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D81BC3376D001F4D5B /* ViewController.m */; };
@@ -48,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DF81891BC46F220021F6E8 /* InputValidationLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputValidationLib.h; path = SpliroTesting/InputValidationLib.h; sourceTree = "<group>"; };
+		24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValidationLibrary.a; path = SpliroTesting/libValidationLibrary.a; sourceTree = "<group>"; };
+		24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinputValidationLib.a; path = SpliroTesting/libinputValidationLib.a; sourceTree = "<group>"; };
 		3BFE07CE1BC3376D001F4D5B /* SpliroTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpliroTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFE07D21BC3376D001F4D5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BFE07D41BC3376D001F4D5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -96,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */,
+				24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +123,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24DF81921BC595780021F6E8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				24DF81891BC46F220021F6E8 /* InputValidationLib.h */,
+				24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */,
+				24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		3BFE07C51BC3376D001F4D5B = {
 			isa = PBXGroup;
 			children = (
+				24DF81921BC595780021F6E8 /* Library */,
 				3BFE082E1BC3380E001F4D5B /* CoreDataProperties */,
 				3BFE07D01BC3376D001F4D5B /* SpliroTesting */,
 				3BFE07ED1BC3376D001F4D5B /* SpliroTestingTests */,
@@ -497,6 +515,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpliroTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpliroTesting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aryausa.SpliroTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -508,6 +530,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpliroTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpliroTesting",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aryausa.SpliroTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -580,6 +606,7 @@
 				3BFE08001BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BFE08011BC3376D001F4D5B /* Build configuration list for PBXNativeTarget "SpliroTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -588,6 +615,7 @@
 				3BFE08031BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3BFE08041BC3376D001F4D5B /* Build configuration list for PBXNativeTarget "SpliroTestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +624,7 @@
 				3BFE08061BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

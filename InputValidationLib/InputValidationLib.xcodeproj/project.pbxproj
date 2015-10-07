@@ -10,6 +10,7 @@
 		24DF81041BC3C2D20021F6E8 /* InputValidationLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24DF81031BC3C2D20021F6E8 /* InputValidationLib.h */; };
 		24DF81061BC3C2D20021F6E8 /* InputValidationLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DF81051BC3C2D20021F6E8 /* InputValidationLib.m */; };
 		24DF810F1BC3C3C00021F6E8 /* libLogLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */; settings = {ASSET_TAGS = (); }; };
+		24DF818B1BC4E2840021F6E8 /* ErrorMessageLibraryBuild FileserrorMessagelib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF818A1BC4E2840021F6E8 /* ErrorMessageLibraryBuild FileserrorMessagelib.a */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		24DF810D1BC3C38D0021F6E8 /* ErrorMessageLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorMessageLibrary.h; sourceTree = "<group>"; };
 		24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLogLibrary.a; sourceTree = "<group>"; };
 		24DF81101BC3C3C90021F6E8 /* LogLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogLibrary.h; sourceTree = "<group>"; };
+		24DF818A1BC4E2840021F6E8 /* ErrorMessageLibraryBuild FileserrorMessagelib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "ErrorMessageLibraryBuild FileserrorMessagelib.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DF810F1BC3C3C00021F6E8 /* libLogLibrary.a in Frameworks */,
+				24DF818B1BC4E2840021F6E8 /* ErrorMessageLibraryBuild FileserrorMessagelib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +73,7 @@
 				24DF81051BC3C2D20021F6E8 /* InputValidationLib.m */,
 				24DF810C1BC3C37E0021F6E8 /* CustomTypedefLibrary.h */,
 				24DF810D1BC3C38D0021F6E8 /* ErrorMessageLibrary.h */,
+				24DF818A1BC4E2840021F6E8 /* ErrorMessageLibraryBuild FileserrorMessagelib.a */,
 				24DF810E1BC3C3C00021F6E8 /* libLogLibrary.a */,
 				24DF81101BC3C3C90021F6E8 /* LogLibrary.h */,
 			);
@@ -263,6 +267,7 @@
 				24DF810B1BC3C2D20021F6E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

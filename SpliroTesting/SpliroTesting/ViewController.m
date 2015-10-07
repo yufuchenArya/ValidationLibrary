@@ -62,15 +62,34 @@
 }
 
 
-- (IBAction)btn_save:(id)sender {
-    NSString * name, *phone, *email;
+- (IBAction)btn_save:(id)sender
+{
+  @try
+ {
+    NSString * name, *phone, *email, *error;
     
     name = self.tf_name.text;
     phone = self.tf_phone.text;
     email = self.tf_email.text;
     
-    [self saveInfo:name :phone :email];
-    [self fetchInfo];
+    if( (! [[[InputValidationLib alloc]init] validateTextfield:@"Name" asTextfieldType:@"TextFieldType" withValue:name asRequired:YES error:& error]) ||
+       (! [[[InputValidationLib alloc]init] validateTextfield:@"Phone" asTextfieldType:@"TextPhoneType" withValue:phone asRequired:YES error:& error]) ||
+       (! [[[InputValidationLib alloc]init] validateTextfield:@"Email" asTextfieldType:@"TextEmailType" withValue:email asRequired:YES error:& error]))
+    {
+        NSLog(@"There is an error in the data: %@" ,error);
+    }
+    else
+    {
+        [self saveInfo:name :phone :email];
+        [self fetchInfo];
+    }
+ }
+    @catch(NSException *exception){
+        NSLog(@"Excetion caught in  ");
+    }
+    @finally{
+    
+    }
 }
 
 - (NSManagedObjectContext *)managedObjectContext {
