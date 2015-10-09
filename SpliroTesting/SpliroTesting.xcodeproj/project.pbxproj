@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
-<<<<<<< HEAD
 		3B9664751BC6CA1C00228BAA /* RegisterationTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9664741BC6CA1C00228BAA /* RegisterationTable.m */; settings = {ASSET_TAGS = (); }; };
 		3BEF9ADC1BC6F82C006123DA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF9AB71BC6F82C006123DA /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
 		3BEF9ADD1BC6F82C006123DA /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF9AB91BC6F82C006123DA /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -29,6 +27,10 @@
 		3BEF9AEC1BC6F82C006123DA /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF9ADB1BC6F82C006123DA /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		3BF675851BC45B1C008E13AA /* API_Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF675841BC45B1C008E13AA /* API_Client.m */; settings = {ASSET_TAGS = (); }; };
 		3BF675881BC47EA6008E13AA /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF675871BC47EA6008E13AA /* SignUpVC.m */; settings = {ASSET_TAGS = (); }; };
+=======
+		24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */; settings = {ASSET_TAGS = (); }; };
+		24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */; settings = {ASSET_TAGS = (); }; };
+>>>>>>> origin/master
 =======
 		24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */; settings = {ASSET_TAGS = (); }; };
 		24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */; settings = {ASSET_TAGS = (); }; };
@@ -78,8 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		3B9664731BC6CA1C00228BAA /* RegisterationTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterationTable.h; sourceTree = "<group>"; };
 		3B9664741BC6CA1C00228BAA /* RegisterationTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterationTable.m; sourceTree = "<group>"; };
 		3B9664761BC6D2BF00228BAA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -124,6 +125,11 @@
 		3BF675841BC45B1C008E13AA /* API_Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = API_Client.m; path = API_Client/API_Client.m; sourceTree = "<group>"; };
 		3BF675861BC47EA6008E13AA /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
 		3BF675871BC47EA6008E13AA /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+=======
+		24DF81891BC46F220021F6E8 /* InputValidationLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputValidationLib.h; path = SpliroTesting/InputValidationLib.h; sourceTree = "<group>"; };
+		24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValidationLibrary.a; path = SpliroTesting/libValidationLibrary.a; sourceTree = "<group>"; };
+		24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinputValidationLib.a; path = SpliroTesting/libinputValidationLib.a; sourceTree = "<group>"; };
+>>>>>>> origin/master
 =======
 		24DF81891BC46F220021F6E8 /* InputValidationLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputValidationLib.h; path = SpliroTesting/InputValidationLib.h; sourceTree = "<group>"; };
 		24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValidationLibrary.a; path = SpliroTesting/libValidationLibrary.a; sourceTree = "<group>"; };
@@ -204,8 +210,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 		3BEF9AB51BC6F82C006123DA /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +272,8 @@
 =======
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> origin/master
 		24DF81921BC595780021F6E8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,7 +282,9 @@
 				24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */,
 			);
 			name = Library;
-<<<<<<< HEAD
+
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
@@ -284,9 +293,11 @@
 		3BFE07C51BC3376D001F4D5B = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 				3B9664761BC6D2BF00228BAA /* Constants.h */,
+=======
+				24DF81921BC595780021F6E8 /* Library */,
+>>>>>>> origin/master
 =======
 				24DF81921BC595780021F6E8 /* Library */,
 >>>>>>> origin/master

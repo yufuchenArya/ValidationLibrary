@@ -122,10 +122,7 @@ NSUndoManager* undoManager;
     email = self.tf_email.text;
     title = self.tf_title.text;
     test = self.tf_test.text;
-    
-    [self saveInfo:name :phone :email :title :test];
-    [self fetchInfo];
-
+ 
     if( (! [[[InputValidationLib alloc]init] validateTextfield:@"Name" asTextfieldType:@"TextFieldType" withValue:name asRequired:YES error:& error]) ||
        (! [[[InputValidationLib alloc]init] validateTextfield:@"Phone" asTextfieldType:@"TextPhoneType" withValue:phone asRequired:YES error:& error]) ||
        (! [[[InputValidationLib alloc]init] validateTextfield:@"Email" asTextfieldType:@"TextEmailType" withValue:email asRequired:YES error:& error]))
@@ -148,6 +145,7 @@ NSUndoManager* undoManager;
 - (IBAction)btn_undo:(id)sender {
 
     [undoManager undo];
+
 }
 
 - (IBAction)changeColor:(id)sender {
