@@ -11,12 +11,13 @@
 
 @implementation DateValidationLibrary
 
--(BOOL) validateDate:(NSString *) date
+-(BOOL) validateDate:(NSDate *) date :(NSString *) dateFormat
 {
     @try {
+        
         NSDateFormatter *format = [[NSDateFormatter alloc] init];
         [format setDateStyle:NSDateFormatterShortStyle];
-        [format setDateFormat:@"MM/dd/yy"];
+        [format setDateFormat:dateFormat];
         NSDate *validDate = [format dateFromString:date];
         if (validDate != nil)
             return YES;
@@ -24,7 +25,8 @@
             return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: validateDate Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
+        
     }
     @finally {
         NSLog( @"In finally block");
@@ -47,7 +49,7 @@
         return components;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: distanceFrom Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");
@@ -66,7 +68,7 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isFutureDateToToday Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");
@@ -84,7 +86,7 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isPastDateToToday Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");
@@ -102,7 +104,7 @@
         else return NO;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: isItToday Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
 
     }
     @finally {
@@ -167,7 +169,7 @@
         return YES;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: validateTime Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");
@@ -201,7 +203,7 @@
         
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: transferToUTCTime Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");
@@ -222,7 +224,7 @@
         return newDateString;
     }
     @catch (NSException *exception) {
-        [[[LogLibrary alloc]init]  writeToLogFile:[@"Exception Caught From: DateValidateLibrary: transferToUTCTime Method" stringByAppendingString:exception.reason]];
+        [[[LogLibrary alloc]init] writeToLogFile:exception.reason inFilePath:@"filePath"];
     }
     @finally {
         NSLog( @"In finally block");

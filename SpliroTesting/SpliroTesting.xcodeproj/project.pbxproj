@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		3B9664751BC6CA1C00228BAA /* RegisterationTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9664741BC6CA1C00228BAA /* RegisterationTable.m */; settings = {ASSET_TAGS = (); }; };
 		3BEF9ADC1BC6F82C006123DA /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF9AB71BC6F82C006123DA /* AFHTTPRequestOperation.m */; settings = {ASSET_TAGS = (); }; };
 		3BEF9ADD1BC6F82C006123DA /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BEF9AB91BC6F82C006123DA /* AFHTTPRequestOperationManager.m */; settings = {ASSET_TAGS = (); }; };
@@ -39,6 +40,8 @@
 		24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */; settings = {ASSET_TAGS = (); }; };
 		24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */; settings = {ASSET_TAGS = (); }; };
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 756b6e0... update
 		3BFE07D31BC3376D001F4D5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D21BC3376D001F4D5B /* main.m */; };
 		3BFE07D61BC3376D001F4D5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D51BC3376D001F4D5B /* AppDelegate.m */; };
 		3BFE07D91BC3376D001F4D5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE07D81BC3376D001F4D5B /* ViewController.m */; };
@@ -80,6 +83,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 
 		3B9664731BC6CA1C00228BAA /* RegisterationTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterationTable.h; sourceTree = "<group>"; };
 		3B9664741BC6CA1C00228BAA /* RegisterationTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterationTable.m; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		24DF818E1BC4EB5A0021F6E8 /* libValidationLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libValidationLibrary.a; path = SpliroTesting/libValidationLibrary.a; sourceTree = "<group>"; };
 		24DF81901BC4EC0E0021F6E8 /* libinputValidationLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libinputValidationLib.a; path = SpliroTesting/libinputValidationLib.a; sourceTree = "<group>"; };
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 756b6e0... update
 		3BFE07CE1BC3376D001F4D5B /* SpliroTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpliroTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BFE07D21BC3376D001F4D5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BFE07D41BC3376D001F4D5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -188,8 +194,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DF818F1BC4EB5A0021F6E8 /* libValidationLibrary.a in Frameworks */,
-				24DF81911BC4EC0E0021F6E8 /* libinputValidationLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +214,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 
 		3BEF9AB51BC6F82C006123DA /* AFNetworking */ = {
 			isa = PBXGroup;
@@ -304,6 +309,11 @@
 =======
 				24DF81921BC595780021F6E8 /* Library */,
 >>>>>>> origin/master
+=======
+		3BFE07C51BC3376D001F4D5B = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> parent of 756b6e0... update
 				3BFE082E1BC3380E001F4D5B /* CoreDataProperties */,
 				3BFE07D01BC3376D001F4D5B /* SpliroTesting */,
 				3BFE07ED1BC3376D001F4D5B /* SpliroTestingTests */,
@@ -325,17 +335,10 @@
 		3BFE07D01BC3376D001F4D5B /* SpliroTesting */ = {
 			isa = PBXGroup;
 			children = (
-				3BEF9AB51BC6F82C006123DA /* AFNetworking */,
-				3BEF9AC91BC6F82C006123DA /* UIKit+AFNetworking */,
-				3BF675821BC45AE7008E13AA /* API_Client */,
 				3BFE07D41BC3376D001F4D5B /* AppDelegate.h */,
 				3BFE07D51BC3376D001F4D5B /* AppDelegate.m */,
 				3BFE07D71BC3376D001F4D5B /* ViewController.h */,
 				3BFE07D81BC3376D001F4D5B /* ViewController.m */,
-				3BF675861BC47EA6008E13AA /* SignUpVC.h */,
-				3BF675871BC47EA6008E13AA /* SignUpVC.m */,
-				3B9664731BC6CA1C00228BAA /* RegisterationTable.h */,
-				3B9664741BC6CA1C00228BAA /* RegisterationTable.m */,
 				3BFE07DA1BC3376D001F4D5B /* Main.storyboard */,
 				3BFE07E01BC3376D001F4D5B /* Assets.xcassets */,
 				3BFE07E21BC3376D001F4D5B /* LaunchScreen.storyboard */,
@@ -537,37 +540,17 @@
 				3BFE07D91BC3376D001F4D5B /* ViewController.m in Sources */,
 				3BFE08241BC337F8001F4D5B /* Sp_dta_post_user+CoreDataProperties.m in Sources */,
 				3BFE082C1BC337F8001F4D5B /* Sqlite_sequence+CoreDataProperties.m in Sources */,
-				3BEF9AE11BC6F82C006123DA /* AFURLConnectionOperation.m in Sources */,
-				3BEF9AE01BC6F82C006123DA /* AFSecurityPolicy.m in Sources */,
-				3BEF9AE81BC6F82C006123DA /* UIButton+AFNetworking.m in Sources */,
-				3BEF9AE61BC6F82C006123DA /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				3BEF9AEA1BC6F82C006123DA /* UIProgressView+AFNetworking.m in Sources */,
 				3BFE08261BC337F8001F4D5B /* Sp_mst_category+CoreDataProperties.m in Sources */,
-				3BEF9ADE1BC6F82C006123DA /* AFHTTPSessionManager.m in Sources */,
 				3BFE07D61BC3376D001F4D5B /* AppDelegate.m in Sources */,
 				3BFE082B1BC337F8001F4D5B /* Sp_dta_user.m in Sources */,
 				3BFE08271BC337F8001F4D5B /* Sp_mst_category.m in Sources */,
 				3BFE08291BC337F8001F4D5B /* Sp_dta_post.m in Sources */,
-				3BEF9AE51BC6F82C006123DA /* AFNetworkActivityIndicatorManager.m in Sources */,
-				3BEF9AE71BC6F82C006123DA /* UIAlertView+AFNetworking.m in Sources */,
 				3BFE08091BC33789001F4D5B /* Spliro.xcdatamodeld in Sources */,
-				3BF675851BC45B1C008E13AA /* API_Client.m in Sources */,
-				3BEF9ADD1BC6F82C006123DA /* AFHTTPRequestOperationManager.m in Sources */,
-				3BEF9AEC1BC6F82C006123DA /* UIWebView+AFNetworking.m in Sources */,
-				3B9664751BC6CA1C00228BAA /* RegisterationTable.m in Sources */,
-				3BEF9ADC1BC6F82C006123DA /* AFHTTPRequestOperation.m in Sources */,
-				3BEF9AEB1BC6F82C006123DA /* UIRefreshControl+AFNetworking.m in Sources */,
-				3BEF9AE41BC6F82C006123DA /* AFURLSessionManager.m in Sources */,
 				3BFE08221BC337F8001F4D5B /* Ios_metadata+CoreDataProperties.m in Sources */,
-				3BEF9ADF1BC6F82C006123DA /* AFNetworkReachabilityManager.m in Sources */,
-				3BEF9AE31BC6F82C006123DA /* AFURLResponseSerialization.m in Sources */,
-				3BEF9AE21BC6F82C006123DA /* AFURLRequestSerialization.m in Sources */,
 				3BFE082D1BC337F8001F4D5B /* Sqlite_sequence.m in Sources */,
 				3BFE082A1BC337F8001F4D5B /* Sp_dta_user+CoreDataProperties.m in Sources */,
 				3BFE08231BC337F8001F4D5B /* Ios_metadata.m in Sources */,
-				3BF675881BC47EA6008E13AA /* SignUpVC.m in Sources */,
 				3BFE08251BC337F8001F4D5B /* Sp_dta_post_user.m in Sources */,
-				3BEF9AE91BC6F82C006123DA /* UIImageView+AFNetworking.m in Sources */,
 				3BFE07D31BC3376D001F4D5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,10 +692,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpliroTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SpliroTesting",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aryausa.SpliroTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -724,10 +703,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpliroTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SpliroTesting",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = Aryausa.SpliroTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -800,7 +775,6 @@
 				3BFE08001BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		3BFE08011BC3376D001F4D5B /* Build configuration list for PBXNativeTarget "SpliroTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -809,7 +783,6 @@
 				3BFE08031BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		3BFE08041BC3376D001F4D5B /* Build configuration list for PBXNativeTarget "SpliroTestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -818,7 +791,6 @@
 				3BFE08061BC3376D001F4D5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

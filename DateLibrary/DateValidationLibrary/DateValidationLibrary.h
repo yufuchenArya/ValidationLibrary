@@ -10,7 +10,8 @@
 
 @interface DateValidationLibrary : NSObject
 
--(BOOL) validateDate:(NSString *) date; // if the date is in MM/dd/YY format and is valid returns YES else returns NO
+-(BOOL) validateDate:(NSString *) date :(NSString *) dateFormat;
+ // if the date is in given format and is valid returns YES else returns NO
 
 - (NSDateComponents *) distanceFrom:(NSDate *)startDate to:(NSDate *)endDate;
 

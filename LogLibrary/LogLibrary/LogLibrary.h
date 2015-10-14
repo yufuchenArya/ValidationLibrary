@@ -10,8 +10,7 @@
 
 @interface LogLibrary : NSObject
 
--(void)writeToLogFile:(NSString *)content inFilePath:(NSString *)documentsDirectory; //To Write any content in Log File
-
+-(void) writeToLogFile:(NSString *)content inFilePath:(NSString *)documentsDirectory;
 -(void)writeExceptionToLogFile:( NSException *)exception fromClass:(NSString *)fromClass fromMethod:(NSString *)methodName;
 
 @end
